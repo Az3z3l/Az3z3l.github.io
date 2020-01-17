@@ -121,7 +121,7 @@ body{
   
   .scroll-down {
     position: absolute;
-    bottom: 13%;
+    bottom: 25%;
     left: 50%;
     margin-left: -16px;
     display: block;
