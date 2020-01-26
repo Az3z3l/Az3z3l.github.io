@@ -1,1 +1,1 @@
-alert();
+prompt(1);
