@@ -1,0 +1,68 @@
+/* text */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+/* Az3z3l */
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500&display=swap');
+
+/* date */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+body {
+    /* background-color: rgb(235, 235, 235); */
+    background-color: rgb(250, 250, 250);
+    display: grid;
+    word-break: break-all;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    margin-left:  15rem;
+    margin-right: 15rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.header {
+    background-color: rgb(42, 42, 42);
+    color: rgb(250, 250, 250);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.header a{
+    text-decoration: none;
+    color: yellowgreen;
+}
+
+.az3z3l {
+    font-family: 'Zilla Slab', serif;
+}
+
+.date {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.post {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    background-color: rgb(245, 245, 245);
+    word-wrap: break-word;
+}
+
+.post a{
+    text-decoration: none;
+    color: black;
+}
+
+.linky {
+    text-align: center;
+} 
+
+.linky a{
+    text-decoration: none;
+    color: rgb(101, 148, 31);
+}
+
+.postcontent {
+    margin-left: 2rem;
+}
