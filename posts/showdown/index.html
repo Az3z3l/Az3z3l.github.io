@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            
+        </title>
+        <link href="/static/style/index.css" rel="stylesheet">
+        <link href="/static/style/posts.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="headerz" class="header"></div>
+        
+        <!-- <h2>About Me</h2> -->
+
+        <div id="content"></div>
+
+
+    </body>
+    <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+    <script>
+        async function getContent() {
+            var converter = new showdown.Converter();
+            cont = await fetch("./content.md")
+            res = await cont.text()
+            title = ""
+            try {
+                title = res.split("\n")[0].split("#")[1].trim()                
+            } catch (error) {
+                title = location.pathname.split("/").slice(-2, -1)[0]                
+            }
+            document.querySelector("head > title").text = title
+            html= converter.makeHtml(res)
+            document.getElementById('content').innerHTML = html
+        }
+        getContent()
+    </script>
+    <script src="/static/script/header.js"></script>
+</html>
