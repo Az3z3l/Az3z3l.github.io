@@ -2,14 +2,14 @@
 <html>
     <head>
         <title>
-            Template blog
+            Az3z3l | Notepad Series Writeups
         </title>
         <link href="/static/style/index.css" rel="stylesheet">
         <link href="/static/style/posts.css" rel="stylesheet">
 
-        <meta name="title" content="Az3z3l's Blog">
-        <meta name="description" content="Writeup for challenge template">
-        <meta name="keywords" content="CTF, Writeup, xyzCTF">
+        <meta name="title" content="Notepad Series Writeups">
+        <meta name="description" content="Writeup for Notepad Challenges from InCTFi 2021">
+        <meta name="keywords" content="CTF, Writeup, InCTFi21, XSS, CRLF, Xsleaks">
         <meta name="robots" content="index, follow">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="language" content="English">
@@ -39,12 +39,12 @@
             cont = await fetch("./content.md")
             res = await cont.text()
             title = ""
-            try {
-                title = res.split("\n")[0].split("#")[1].trim()                
-            } catch (error) {
-                title = location.pathname.split("/").slice(-2, -1)[0]                
-            }
-            document.querySelector("head > title").text = title
+            // try {
+            //     title = res.split("\n")[0].split("#")[1].trim()                
+            // } catch (error) {
+            //     title = location.pathname.split("/").slice(-2, -1)[0]                
+            // }
+            // document.querySelector("head > title").text = title
             html= converter.makeHtml(res)
             document.getElementById('content').innerHTML = html
         }
