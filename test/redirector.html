@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Redirector</title>
+    </head>
+    <body>
+        <script>
+            const queryString = window.location.search;
+            console.log(queryString);
+            const urlParams = new URLSearchParams(queryString);
+            if (urlParams.has('product')){
+                const url = urlParams.get('url')
+                document.location = url 
+            } else {
+                alert("Format is: " +document.origin + "?url=redirectURL")
+            }
+        </script>
+    </body>
+</html>
